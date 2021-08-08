@@ -63,7 +63,7 @@ class CannonBall {
     this.animation = splashAnimation;
     this.speed = 0.05;
     setTimeout(() => {
-      Matter.world.remove(world, this.body);
+      Matter.World.remove(world, this.body);
       balls.splice(index, 1);
     }, 1000
     );
